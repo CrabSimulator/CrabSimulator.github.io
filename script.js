@@ -8,6 +8,10 @@ import { BlackScreen } from "./engine/entities/blackScreen.js"
 const debug = false
 
 async function onload() {
+	game.day = 0
+	game.variables = {
+		peopleConvinced: 1 // old man will always think you're cool :sunglasses:
+	}
 	window.game = new Game()
 	game.loop() // start the game loop
 	await sleep(1)
