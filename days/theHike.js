@@ -46,7 +46,7 @@ export async function execute() {
 		await sleep(3)
 		await player.speak("I've never seen this before. It's not working! I can't snip it.")
 	} else { // break apart
-		await player.move(1013, 553, 1)
+		await player.move(1013, 553, 1.3)
 		await sleep(.2)
 		player.state.clacking = true
 		player.state.breaking = true
