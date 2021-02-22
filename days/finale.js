@@ -145,8 +145,7 @@ export async function execute() {
 
 	game.playAudio("boatEngine")
 	for(let i = 0; i < 30; i++) {
-		game.sounds.boatEngine.volume = i * 2 / 59
-		console.log(i * 2 / 59 / 10)
+		game.sounds.boatEngine.volume = i * 2 / 59 / 2
 		await game.frame1()
 	}
 
