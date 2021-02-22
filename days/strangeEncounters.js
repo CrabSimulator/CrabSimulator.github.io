@@ -55,7 +55,7 @@ export async function execute() {
 	} else { // confusion
 		await player.speak("Uh, that doesn't make sense. Bay crabs don't eat fresh meat, they're detrivores.", 1)
 		await yellowCrab.speak("It's an expression, nerd.")
-		await orangeCrab.speak("You know what? I'll let you off since I don't think you're from around these parts. \b Shellfish City ain't the place it was five years ago. Watch yourself")
+		await orangeCrab.speak("You know what? I'll let you off since I don't think you're from around these parts. \b Shellfish City ain't the place it was five years ago. Watch yourself.")
 		await background.speak("(You decide to hurry into the store)")
 	}
 
