@@ -8,10 +8,6 @@ import { BlackScreen } from "./engine/entities/blackScreen.js"
 const debug = false
 
 async function onload() {
-	game.day = 0
-	game.variables = {
-		peopleConvinced: 1 // old man will always think you're cool :sunglasses:
-	}
 	window.game = new Game()
 	game.loop() // start the game loop
 	await sleep(1)
@@ -22,6 +18,10 @@ async function onload() {
 }
 
 async function start() {
+	game.day = 0
+	game.variables = {
+		peopleConvinced: 1 // old man will always think you're cool :sunglasses:
+	}
 	await sleep(1)
 	game.playAudioFade("waves")
 	await sleep(0.5)
