@@ -1,5 +1,6 @@
 import { Crab } from "../engine/characters/crab.js"
 import { Entity, Character } from "../engine/entity.js"
+import { Kelp } from "../engine/characters/kelp.js"
 
 export async function execute() {
 
@@ -32,10 +33,11 @@ export async function execute() {
 	// transition into part 2
 	await game.fadeOut()
 
-	let kelp3 = game.newEntity("kelp3", new Character(2150, 17, newImages({
+	let kelp3 = game.newEntity("kelp3", new Kelp(2100, 17, newImages({
 		kelp_1: "./assets/kelp/kelp_1.png",
 		kelp_2: "./assets/kelp/kelp_2.png",
-		kelp_3: "./assets/kelp/kelp_3.png"
+		kelp_3: "./assets/kelp/kelp_3.png",
+		kelp_blocker: "./assets/kelp/kelp_blocker.png"
 	}), ["kelp_1", "kelp_2", "kelp_3"]))
 	let oldMan = game.newEntity("oldMan", new Crab(2180, 469, newImages({
 		body: "./assets/oldManCrab/old_crab_body.png",
@@ -46,25 +48,29 @@ export async function execute() {
 		legs_1: "./assets/oldManCrab/old_crab_legs_1.png"
 	}), ["body", "arms", "eyes", "legs"], "gray"))
 	let oldManBlocker = game.newEntity("oldManBlocker", new Entity(2090, 653, newImage("./assets/oldManDay/oldManBlocker.png")))
-	let kelp1 = game.newEntity("kelp1", new Character(1456, 30, newImages({
+	let kelp1 = game.newEntity("kelp1", new Kelp(1406, 30, newImages({
 		kelp_1: "./assets/kelp/kelp_1.png",
 		kelp_2: "./assets/kelp/kelp_2.png",
-		kelp_3: "./assets/kelp/kelp_3.png"
+		kelp_3: "./assets/kelp/kelp_3.png",
+		kelp_blocker: "./assets/kelp/kelp_blocker.png"
 	}), ["kelp_1", "kelp_2", "kelp_3"]))
-	let kelp2 = game.newEntity("kelp2", new Character(1827, 715, newImages({
+	let kelp2 = game.newEntity("kelp2", new Kelp(1777, 715, newImages({
 		kelp_1: "./assets/kelp/kelp_1.png",
 		kelp_2: "./assets/kelp/kelp_2.png",
-		kelp_3: "./assets/kelp/kelp_3.png"
+		kelp_3: "./assets/kelp/kelp_3.png",
+		kelp_blocker: "./assets/kelp/kelp_blocker.png"
 	}), ["kelp_1", "kelp_2", "kelp_3"]))
-	let kelp4 = game.newEntity("kelp4", new Character(2532, 633, newImages({
+	let kelp4 = game.newEntity("kelp4", new Kelp(2482, 633, newImages({
 		kelp_1: "./assets/kelp/kelp_1.png",
 		kelp_2: "./assets/kelp/kelp_2.png",
-		kelp_3: "./assets/kelp/kelp_3.png"
+		kelp_3: "./assets/kelp/kelp_3.png",
+		kelp_blocker: "./assets/kelp/kelp_blocker.png"
 	}), ["kelp_1", "kelp_2", "kelp_3"]))
-	let kelp5 = game.newEntity("kelp5", new Character(2646, 870, newImages({
+	let kelp5 = game.newEntity("kelp5", new Kelp(2596, 870, newImages({
 		kelp_1: "./assets/kelp/kelp_1.png",
 		kelp_2: "./assets/kelp/kelp_2.png",
-		kelp_3: "./assets/kelp/kelp_3.png"
+		kelp_3: "./assets/kelp/kelp_3.png",
+		kelp_blocker: "./assets/kelp/kelp_blocker.png"
 	}), ["kelp_1", "kelp_2", "kelp_3"]))
 	let stick = game.newEntity("stick", new Entity(586, 550, newImage("./assets/oldManDay/stick.png")))
 

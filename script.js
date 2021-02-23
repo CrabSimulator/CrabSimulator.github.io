@@ -28,7 +28,7 @@ async function start() {
 	game.fadeIn()
 	let option = await menu()
 
-	const actOneQueue = debug ? ["./days/finale.js"] : ["./days/oldMan.js", "./days/peerPressure.js", "./days/strangeEncounters.js", "./days/theHike.js"]
+	const actOneQueue = debug ? ["./days/oldMan.js"] : ["./days/oldMan.js", "./days/peerPressure.js", "./days/strangeEncounters.js", "./days/theHike.js"]
 	let blackScreen = game.newEntity("blackScreen", new BlackScreen())
 	await blackScreen.fadeOut()
 	game.blackScreen.alpha = 1
